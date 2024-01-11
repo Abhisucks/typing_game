@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Typing Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="offset-sm-3 col-sm-6">
+                <div class="card mt-5" id="card1">
+                    <div class="card-header text-center bg-dark text-light">
+                        <h3>Typing Game</h3>
+                    </div>
+                    <div class="card-body text-dark">
+                        <div class="d-flex justify-content-between">
+                            <h4 id="timer" class="text-danger">Timer</h4>
+                            <h4 id="score">Score 0</h4>
+                        </div>
+
+                        <h2 id="word" class="text-center my-4">Type Word</h2>
+                        <input type="text" name="" id="inp" class="form-control mb-2" placeholder="Type Word">
+
+                    </div>
+                </div>
+
+                <div class="card mt-5 d-none" id="card2">
+                    <div class="card-header text-center bg-dark text-light">
+                        <h3>Typing Game</h3>
+                    </div>
+                    <div class="card-body text-dark">
+                        <div class="d-flex justify-content-center flex-column">
+                            <h4 id="score-board" class="text-center">Your Score 0</h4>
+                            <button id="refreshButton" class="btn btn-outline-danger mt-4 text-center">Restart
+                                Game</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
