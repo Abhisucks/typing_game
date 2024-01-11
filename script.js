@@ -13,12 +13,13 @@ function handleWords() {
     word.innerHTML = wordArray[i];
 }
 
+let t = 6;
+
 document.getElementById("startButton").addEventListener("click", function () {
     handleWords();
     inp.disabled = false;
     inp.focus();
 
-    let t = 6;
     let watch = setInterval(function () {
         t--;
         timer.innerHTML = `${t}s`;
